@@ -4,6 +4,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
+    margin: 0;
     
 }
 .container{
@@ -99,6 +100,8 @@ course style here
     padding: 10px;
     box-shadow: 0 0 20px rgb(245, 245, 245);
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
 }
 .course-banner img{
     width: 100%;
@@ -140,4 +143,78 @@ course style here
 }
 .duration i{
     margin-right: 5.42px;
+}
+
+/*---------------------------
+       media query style
+-------------------------- */
+
+@media only screen and (max-width: 688px){
+
+    .section-title{
+        text-align: center;
+    }
+    .container{
+        width: 100%;
+        margin: 0 50%;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        justify-content: center;
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog{
+        flex-direction: column;
+    }
+    .blog-info{
+        width: 80%;
+        text-align: center;
+    }
+    .courses{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 49px;
+    }
+    .course{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+ /* tablate responsive design */
+
+@media only screen and (min-width: 689px) and (max-width: 992px){
+    
+    .section-title{
+        text-align: center;
+    }
+    .container{
+        width: 100%;
+        margin: 0 50%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player{
+        justify-content: center;
+    }
+    .blog{
+        flex-direction: column;
+    }
+    .blog-info{
+        text-align: center;
+    }
+    .courses{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+        grid-column-gap: 30px;
+    }
+    .course{
+        width: 80%;
+        margin: 0 auto;
+    }
+        
 }
